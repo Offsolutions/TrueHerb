@@ -192,6 +192,7 @@ public partial class User_Join_us : System.Web.UI.Page
 
                                     objsql.ExecuteNonQuery("insert into legs(regno,leftleg,rightleg,leftdirect,rightdirect,status,cappingleft,cappingright)values('" + newregno + "','0','0','0','0','0','0','0')");
 
+                                    objsql.ExecuteNonQuery("insert into tblcapping(regno,date,todayleft,todayright,leftleg,rightleg,todaycapping) values('" + newregno + "','" + System.DateTime.Now + "','0','0','0','0','0')");
 
 
 
@@ -252,6 +253,7 @@ public partial class User_Join_us : System.Web.UI.Page
                                         }
 
                                                objsql.ExecuteNonQuery("insert into legs(regno,leftleg,rightleg,leftdirect,rightdirect,status,cappingleft,cappingright)values('" + newregno + "','0','0','0','0','0','0','0')");
+                                        objsql.ExecuteNonQuery("insert into tblcapping(regno,date,todayleft,todayright,leftleg,rightleg,todaycapping) values('" + newregno + "','" + System.DateTime.Now + "','0','0','0','0','0')");
 
 
 
@@ -268,6 +270,7 @@ public partial class User_Join_us : System.Web.UI.Page
 
 
                                         objsql.ExecuteNonQuery("insert into legs(regno,leftleg,rightleg,leftdirect,rightdirect,status,cappingleft,cappingright)values('" + newregno + "','0','0','0','0','0','0','0')");
+                                        objsql.ExecuteNonQuery("insert into tblcapping(regno,date,todayleft,todayright,leftleg,rightleg,todaycapping) values('" + newregno + "','" + System.DateTime.Now + "','0','0','0','0','0')");
 
 
 
